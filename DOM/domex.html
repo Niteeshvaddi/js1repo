@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom ex</title>
+</head>
+<body>
+    <input type="text" id = "t1" value="100">
+    <input type="text" id = "t2" value="200">
+    <button onclick="addition()"> + </button>
+    <button onclick="absquare()">(a+b)^2</button>
+    <input type="text" id = "t3">
+<script>
+function addition(){
+    let x= eval(document.getElementById('t1').value)
+    let y = eval(document.getElementById('t2').value)
+    let sum = eval(x)+eval(y)
+    document.getElementById('t3').value = sum
+}
+function absquare(){
+    let a= eval(document.getElementById('t1').value)
+    let b= eval(document.getElementById('t2').value)
+    let result = (a*a)+(b*b)+(2*(a+b))
+    document.getElementById('t3').value = result
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <script>
+        function fun1() {
+        let fname = document.getElementById('t1').value
+        let lname = document.getElementById('t2').value
+        let msg = 'your mane is: ' +fname+" "+lname 
+        alert (msg)      
+     }
+    </script>
+</head>
+<body>
+   Enter your first Name: <input type="text" id="t1"> <br>
+   Enter your last name: <input type="text" id="t2"> <br>
+   <button onclick="fun1()">
+     showfullname
+   </button>
+</body>
+</html>
